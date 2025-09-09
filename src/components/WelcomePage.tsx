@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Sun, Moon, Sunrise } from 'lucide-react';
+import WeatherApp from './WeatherApp';
 
 interface WelcomePageProps {
   onEnter: () => void;
@@ -65,6 +66,7 @@ const WelcomePage = ({ onEnter }: WelcomePageProps) => {
           </motion.div>
 
           {/* Greeting */}
+        
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -123,5 +125,7 @@ const WelcomePage = ({ onEnter }: WelcomePageProps) => {
     </div>
   );
 };
+
+// this is my WeatherApp
 
 export default WelcomePage;
