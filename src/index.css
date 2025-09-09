@@ -131,8 +131,12 @@
   }
   
   .glass-input {
-    @apply glass rounded-2xl px-6 py-4 text-white placeholder-white/70;
-  }
+  @apply glass rounded-2xl px-6 py-4 text-black;
+}
+
+.glass-input::placeholder {
+  @apply text-white/70;
+}
 
   /* Weather Animations */
   .floating {
@@ -159,7 +163,7 @@
   .text-hero {
     @apply text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8;
     text-shadow: var(--text-shadow-strong);
-    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    background: linear-gradient(135deg, #171717 0%, #1e1e1e 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
